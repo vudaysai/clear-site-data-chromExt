@@ -1,2 +1,2 @@
 # clear-site-data-chromExt
-Chrome extension
+A simple Google chrome extension which clears active tab site data on icon click.

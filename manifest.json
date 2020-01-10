@@ -1,0 +1,21 @@
+{
+  "name": "Clear Site Data ",
+  "description": "This will clear current tab localStorage, sessionStorage and cookies",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "storage",
+    "cookies",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "name": "Click to get URL"
+  }
+}
