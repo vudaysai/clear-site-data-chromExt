@@ -1,21 +1,27 @@
 {
-  "name": "Clear Site Data ",
+  "name": "Clear Site Data",
   "description": "This will clear active chrome tab localStorage, sessionStorage and cookies",
-  "version": "0.0.1",
-  "manifest_version": 2,
+  "version": "1.1.1",
+  "manifest_version": 3,
   "permissions": [
     "activeTab",
-    "storage",
     "cookies",
+    "storage",
+    "scripting",
     "tabs",
-    "http://*/*",
-    "https://*/*"
+    "cookies"
   ],
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "service-worker.js"
   },
-  "browser_action": {
-    "default_icon": "images/icon32.png" 
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/icon.png"
+    },
+    "default_title": "Delete site data"
   }
 }
