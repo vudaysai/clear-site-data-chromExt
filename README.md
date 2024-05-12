@@ -1,3 +1,3 @@
-# clear site data [Chrome Extension]
+# Clear a Website local data [Chrome Extension]
 
-A simple Google chrome extension which clears active tab site data on icon click.
+A simple Google Chrome extension which clears active tab site data on icon click.
